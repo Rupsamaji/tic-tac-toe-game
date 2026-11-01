@@ -1,33 +1,3 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <h1>Tic Tac Toe</h1>
-
-    <div class="scoreboard">
-        <p>Player X: <span id="scoreX">0</span></p>
-        <p>Player O: <span id="scoreO">0</span></p>
-    </div>
-
-    <div class="board">
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-    </div>
-
-    <h2 id="status"></h2>
-    <button onclick="resetGame()">Reset Board</button>
-
-<script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Play a two-player Tic Tac Toe game and track the score."><title>Tic Tac Toe | Rupsa Maji</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body><main class="game"><a class="back" href="https://github.com/Rupsamaji" target="_blank" rel="noreferrer">↗ Rupsa Maji</a><p class="eyebrow">THE CLASSIC TWO-PLAYER GAME</p><h1>Tic Tac <span>Toe.</span></h1><p class="subtitle">A little friendly competition never hurt.</p><section class="scoreboard"><div class="score-card x-card"><span>PLAYER X</span><strong id="scoreX">0</strong></div><div class="score-card draw-card"><span>DRAWS</span><strong id="scoreDraw">0</strong></div><div class="score-card o-card"><span>PLAYER O</span><strong id="scoreO">0</strong></div></section><section class="game-panel"><div class="turn" id="status" aria-live="polite">Player X's turn</div><div class="board" role="group" aria-label="Tic Tac Toe board"><button class="cell" aria-label="Cell 1"></button><button class="cell" aria-label="Cell 2"></button><button class="cell" aria-label="Cell 3"></button><button class="cell" aria-label="Cell 4"></button><button class="cell" aria-label="Cell 5"></button><button class="cell" aria-label="Cell 6"></button><button class="cell" aria-label="Cell 7"></button><button class="cell" aria-label="Cell 8"></button><button class="cell" aria-label="Cell 9"></button></div><div class="actions"><button class="new-game" id="newGame">New round</button><button class="reset" id="resetScores">Reset scores</button></div></section><p class="hint">Take turns placing X and O. First to get three in a row wins.</p><footer>Built with HTML · CSS · JavaScript</footer></main><script src="script.js"></script></body></html>
